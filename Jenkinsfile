@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('script') {
+      steps {
+        bat(script: 'C:/tmp1/notepad1.bat', returnStdout: true)
+      }
+    }
+
   }
 }
